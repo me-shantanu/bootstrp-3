@@ -1,0 +1,82 @@
+body {
+    font-family: 'Playfair Display', serif;
+}
+/*header*/
+header {
+    height: 100vh;
+    background: url(bg2.jpg) no-repeat center center /cover;
+
+
+}
+/*baner */
+
+.banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+.banner-heading{
+    animation-name: shan;
+    animation-duration: 2s;
+
+}
+.banner-par{
+    animation-name: shan;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-fill-mode:backwards; 
+}
+@keyframes shan{
+    0%{
+        transform: translate(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+/*end of baner*/
+/*nav*/
+.nav-menu{
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
+    padding: 30px;
+    transition: all .7s;
+}
+.menu-item{
+    font-size:13px;
+    letter-spacing: 1px;
+    color: #eeeeee;
+
+}
+.menu-item:hover{
+    color: #709ed2;
+
+}
+.nav-active{
+    color: #709ed2;
+}
+.line1, .line2, .line3{
+    width: 23px;
+    height: 3px;
+    margin: 5px;
+    transition: all .4s;
+} 
+.change .line1{
+    transform: rotate(-45deg)  translate(-5px , 6px);
+ }
+ .change .line2{
+     opacity: 0;
+ }
+ .change .line3{
+    transform: rotate(45deg)  translate(-5px , -6px);
+ }
+ .custom-navbar{
+     padding: 5px 30px;
+     background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7));
+
+ }
+/* end od nav*/
+/*end of banner */
